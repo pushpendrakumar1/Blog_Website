@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pushpendra's Blog</title>
+
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Blog Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="assets/images/bat.jpg" type="image/x-icon">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+
+</head>
+<style>
+	.project-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 20px;
+		max-width: 800px;
+		/* Adjust as needed */
+		margin: 0 auto;
+	}
+
+	.project-card {
+		height: 150px !important;
+		width: calc(50% - 10px);
+		padding: 20px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		text-align: center;
+		transition: transform 0.3s, box-shadow 0.3s;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.card-image {
+		width: 100%;
+		height: 160px;
+		/* Adjust the height as needed */
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.project-card:hover {
+		transform: scale(1.2);
+		/* Increase the size when hovered */
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+		/* Bring the card above other cards */
+	}
+
+	.project-card i {
+		font-size: 21px;
+		margin-bottom: 10px;
+	}
+
+	.project-card h6 {
+		font-weight: normal;
+
+	}
+
+	.project-card .project-description {
+		display: none;
+	}
+
+	.project-card:hover .project-description {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(240, 248, 255, 0.8) 30%);
+		padding: 10px;
+		margin: 0;
+	}
+
+	.h66 {
+		font-weight: bold;
+	}
+
+	.left {
+		color: #ff004f;
+		font-weight: 500;
+		text-decoration: none;
+	}
+
+	.left:hover {
+		color: #fd0050;
+		font-weight: bold;
+	}
+
+	.right {
+		color: #ff004f;
+		font-weight: 500;
+		text-decoration: none;
+		float: right;
+	}
+
+	.right:hover {
+		color: #fd0050;
+		font-weight: bold;
+	}
+
+	.whatsapp {
+		position: fixed;
+		bottom: 120px;
+		right: 30px;
+	}
+
+	.whatsapp:hover {
+		transform: translateY(-5px);
+	}
+
+	.scroll {
+		font-size: 32px;
+		position: fixed;
+		right: 1%;
+		bottom: 10px;
+		cursor: pointer;
+
+	}
+
+	.scroll:hover {
+		transform: translateY(-5px);
+	}
+
+	@media only screen and (max-width: 1200px) {
+		.scroll {
+			position: fixed;
+			right: 5% !important;
+			bottom: 10px;
+	      
+		}
+	}
+	
+	
+	#services {
+		padding: 3px 0;
+	
+	}
+	
+	.services-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 40px;
+		margin-top: 50px;
+	
+	}
+	
+	.services-list div {
+		background: aliceblue;
+		padding: 40px;
+		font-size: 13px;
+		font-weight: 300;
+		border-radius: 10px;
+		transition: ease-in 0.5s, transform 0.5s;
+	
+	}
+	.services-list div:hover {
+		color: white;
+	
+	}
+	
+	.services-list div i {
+		font-size: 50px;
+		margin-bottom: 30px;
+	
+	}
+	
+	.services-list div h2 {
+		font-size: 30px;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+	
+	.services-list div a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 15px;
+		margin-top: 20px;
+		display: inline-block;
+	}
+	
+	.services-list div:hover {
+		background: #ff004f;
+		transform: translateY(-10px);
+	}
+	.services-list p{		
+		font-weight: 400;
+		
+	}
+	#lrn{
+		font-weight: 450;
+		color: black;
+	}
+	#lrn:hover{
+		color: white;
+	}
+	#touch{
+		color: #ff004f;
+		 background-color: white;
+	}
+	#touch:hover{
+		color: white;
+		 background-color: #ff004f;
+	}
+	#hov{
+		color: white;
+	}
+	#hov:hover{
+		color: #ff004f;
+	}
+	.nav-link.active{
+		color: #fd0050 !important;
+	}
+</style>
+
+<body>
+
+	<header class="header text-center" style="background-color: black !important;">
+		<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html"
+				style="color: white;">Pushpendra's Blog</a></h1>
+
+		<nav class="navbar navbar-expand-lg navbar-dark">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column">
+				<div class="profile-section pt-3 pt-lg-0">
+					<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/B.png" alt="image">
+
+					<div class="bio mb-3">Hii, My name is Pushpendra Kumar. A passionate and results-driven individual
+						with a
+						background in Computer Science. Welcome to my page.<br>
+					</div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+						<li class="list-inline-item" title="Linkedin"><a href="https://www.linkedin.com/in/pushpendra-kumar-8bb2581a1"
+								target="_blank"><i class="fab fa-linkedin-in fa-fw" title="Linkedin" style="color: #ff004f;"></i></a>
+						</li>
+						<li class="list-inline-item"  title="Github"><a href="https://github.com/pushpendrakumar1" target="_blank"><i
+									class="fab fa-github-alt fa-fw"  title="Github" style="color: #ff004f;"></i></a></li>
+						<li class="list-inline-item"  title="Instagram"><a href="https://instagram.com/varunk6854?igshid=NTE5MzUyOTU="
+								target="_blank"><i class="fab fa-instagram fa-fw" title="Instagram" style="color: #ff004f;"></i></a></li>
+						<li class="list-inline-item" title="Facebook"><a href="https://www.facebook.com/Varun-Kumar-113202831703016/"
+								target="_blank"><i class="fab fa-facebook fa-fw" title="Facebook" style="color: #ff004f;"></i></a></li>
+						<li class="list-inline-item" title="Portfolio"><a href="https://pushpendraportfolio.netlify.app/"
+								target="_blank"><i class="fab fa-codepen fa-fw" title="Portfolio" style="color: #ff004f;"></i></a></li>
+					</ul><!--//social-list-->
+					<hr>
+				</div><!--//profile-section-->
+
+				<ul class="navbar-nav flex-column text-start">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html" id="hov"><i class="fas fa-home fa-fw me-2"
+								style="color: #ff004f;"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog-post.html" id="hov"><i
+								class="fas fa-bookmark fa-fw me-2" style="color: #ff004f;"></i>Blog
+							Post</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="about.html" id="hov"><i
+								class="fas fa-user fa-fw me-2 " style="color: #ff004f;"></i>About Me</a>
+					</li>
+				</ul>
+
+				<div class="my-2 my-md-3">
+
+					<a class="btn btn-primary" id="touch" href="index.html"
+						>Get in Touch</a>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="main-wrapper">
+		<section class="cta-section py-5" style="background-color: aliceblue;">
+			<div class="container text-center single-col-max-width">
+				<h2 class="heading" >Pushpendra's Blog</h2>
+            </div>
+		</section>	
+		<article class="about-section py-5">
+			<div class="container">
+				<h2 class="title mb-3">About Me</h2>
+
+				<p> I've since honed my skills in web development, automation, and Python programming. I thrive on
+					challenges, continuously learn, and believe in the power of technology to make a positive impact.
+					I've always been deeply captivated by the power of technology to transform industries and enhance
+					user experiences.
+				</p>
+				<h5 class="mt-5">About The Blog</h5>
+				<p>Explore my portfolio to witness the results of my dedication. From web development projects that
+					showcase my expertise to automation tools that boost efficiency, you'll find a diverse range of work
+					that reflects my commitment to excellence.
+				</p>
+				<h5 class="mt-5">My Skills and Experiences</h5>
+				<p>In my professional journey, I've had the privilege of working as an Automation/Full-Stack Developer.
+					I've leveraged my skills in Django, Python, HTML, Bootstrap, CSS, and JavaScript to streamline
+					operations, create user-friendly interfaces, and enhance data management. I'm driven by a commitment
+					to innovation and collaboration, aiming to create solutions that transcend boundaries.
+				</p>
+				<h5 class="mt-5">Personal Projects</h5>
+				<div class="mb-3"><a href="https://github.com/pushpendrakumar1" class="left">Full-Stack</a><a
+						href="https://pushpendraportfolio.netlify.app/" class="right">Personal Portfolio</a></div>
+				<div class="project-container mb-4">
+
+					<div class="project-card">
+						<div class="card-image" style="background-image: url('assets/images/1.png');"></div>
+						<i class="fas fa-code"></i>
+						<h1 style="font-weight: bolder;">Admin Website</h1>
+						<div class="project-description">A full-stack website featuring tables, forums, dashboards, and
+							more, all seamlessly connected using Django with Python. It showcases my skills in web
+							development, Python, and Django.</div>
+					</div>
+					<div class="project-card">
+						<div class="card-image" style="background-image: url('assets/images/2.jpg');"></div>
+						<i class="fas fa-laptop-code"></i>
+						<div class="project-description">It is a dynamic and personalized portfolio website that
+							showcases my work. In this project, I worked on HTML, CSS, and JavaScript. It contains all
+							of my details and projects.</div>
+					</div>
+				</div>
+				<div class="mb-3"><a href="https://nietschoolweb.netlify.app/" class="left">School Websites</a><a
+						href="http://pushpendra123.pythonanywhere.com/" class="right">Scripting Tool</a></div>
+				<div class="project-container">
+					<div class="project-card">
+						<div class="card-image" style="background-image: url('assets/images/3.jpg');"></div>
+						<i class="fas fa-school"></i>
+						<h6 style="font-weight: bolder;">School Websites</h6>
+						<div class="project-description">A school website project that I developed and plan to deploy. A
+							small but meaningful project.</div>
+					</div>
+
+					<div class="project-card">
+						<div class="card-image" style="background-image: url('assets/images/4.jpg');"></div>
+						<i class="fas fa-users"></i>
+						<h6 style="font-weight: bolder;"></h6>
+						<div class="project-description">It is Scripting tool which use to convert and Modify scripts
+							and make CIQ.</div>
+					</div>
+
+				</div>
+				<div id="services" class="mt-5">
+
+					<div id="conatiner">
+						<h1 class="sub-title>">My Services</h1>
+						<div class="services-list">
+							<div>
+								<i class="fa-brands fa-squarespace" style="font-size: 50px;"></i>
+								<!-- <i class="fa-sharp fa-solid fa-code-compare"></i> -->
+								<h2 class="aa">Software Developer</h2>
+								<p>I am a software Developer and I have Design,Program,Build,Deploy many Software and
+									Maintain software with Good Skills and Tools. </p>
+								<a href="#" id="lrn">Learn More</a>
+							</div>
+							<div>
+								<i class="fa-brands fa-mandalorian" style="font-size: 50px;"></i>
+								<h2 v>Web Designer</h2>
+								<p>I am a Web Designer and I have Design many Websites and I have knowledge of HTML,CSS
+									JAVASCRIPT,Bootstrap 5, Django and REACT and used VS Code Editor.</p>
+								<a href="#" id="lrn">Learn More</a>
+							</div>
+							<div>
+								<i class="fa-brands fa-app-store" style="font-size: 50px;"></i>
+								<h2 class="aa">Automation Tool</h2>
+								<p>I have knowledge of good Tool Automation Skills and I am very good in develop many tricky
+									things
+									and I
+									am good in Management servies and manage things properly.</p>
+								<a href="#" id="lrn">Learn More</a>
+							</div>
+	
+							<div>
+								<i class="fa-brands fa-slack" style="font-size: 50px;"></i>
+								<h2 class="aa">Management</h2>
+								<p>I have knowledge of good management Skills and I am very good in manage things properly
+									and I
+									am good in Management servies and a good Leader.</p>
+								<a href="#" id="lrn">Learn More</a>
+							</div>
+	
+						</div>
+					</div>
+	
+				</div>
+
+				
+		</article><!--//about-section-->
+
+		<!-- Get in Touch Section -->
+		<section class="cta-section py-5" >
+			<div class="container text-center">
+				<h2 class="heading">Get in Touch</h2>
+				<div class="intro">Feel free to reach out with any questions or collaborations. Leave your email or
+					phone number, and I'll get back to you.</div>
+				<div class="single-form-max-width pt-3 mx-auto">
+					<form name="submit-to-google-sheet">
+						<input type="text"  class="form-control me-md-1 mb-2" name="Name" placeholder="Your Name" required>
+						<input type="Email" class="form-control me-md-1 mb-2" name="Email" placeholder="Your Email" required>
+						<input type="tel" id="phone" class="form-control me-md-1 mb-2" name="phone" placeholder="Mobile Number">
+						<textarea name="Message" rows="6" class="form-control me-md-1 mb-3" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+					<span id="msg"></span>
+					
+				</div>
+			</div>
+		</section>
+
+		<div class="whatsapp">
+			<a href="https://wa.me/917078932543" target="_blank"><img src="assets/images/what.jpg" width="50px"
+					class="whatsapp_btn"></a>
+		</div>
+		<div class="scroll">
+			<a href="#" id="up" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+		</div>
+	 <footer class="footer text-center py-2 theme-bg-dark">
+		<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="https://pushpendraportfolio.netlify.app/" target="_blank" style="text-decoration: none;">Pushpendra Kumar</a></small>
+		</footer> 
+
+
+	</div>
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbz8vnGF_O-Dfm7-V_ehLfqa48dUb62GXZCYOWUQ5JjQDzZbSXKcJFcs0qIdf7nolcel/exec'
+	const form = document.forms['submit-to-google-sheet']
+	const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => {
+				msg.innerHTML = "Message Sent Successfully"
+				setTimeout(function () {
+					msg.innerHTML = ""
+
+				}, 2000)
+				form.reset()
+			})
+
+
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+
+<script>
+	let currentProject = 0; // Index of the currently displayed project
+	const projects = document.querySelectorAll('.project-card');
+
+	// Function to show the previous project
+	function prevProject() {
+		projects[currentProject].style.display = 'none';
+		currentProject = (currentProject - 1 + projects.length) % projects.length;
+		projects[currentProject].style.display = 'block';
+	}
+
+	// Function to show the next project
+	function nextProject() {
+		projects[currentProject].style.display = 'none';
+		currentProject = (currentProject + 1) % projects.length;
+		projects[currentProject].style.display = 'block';
+	}
+</script>
+
+</html>

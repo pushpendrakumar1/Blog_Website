@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pushpendra's Blog</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="assets/images/bat.jpg" type="image/x-icon">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugin CSS -->
+	<link rel="stylesheet" href="assets/plugins/highlight/styles/monokai-sublime.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+
+
+</head>
+<style>
+	.whatsapp {
+		position: fixed;
+		bottom: 120px;
+		right: 30px;
+	}
+
+	.whatsapp:hover {
+		transform: translateY(-5px);
+	}
+
+	.scroll {
+		font-size: 32px;
+		position: fixed;
+		right: 1%;
+		bottom: 10px;
+		cursor: pointer;
+
+	}
+
+	.scroll:hover {
+		transform: translateY(-5px);
+	}
+
+	#beni {
+		color: black !important;
+		font-weight: 700 !important;
+		font-size: 18px !important;
+		margin-bottom: -10px;
+	}
+	.promo-section{
+		margin-bottom: -20px !important;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		.scroll {
+			position: fixed;
+			right: 5% !important;
+			bottom: 10px;
+
+		}
+	}
+	#lrn{
+		font-weight: 450;
+		color: black;
+	}
+	#lrn:hover{
+		color: white;
+	}
+	#touch{
+		color: #ff004f;
+		 background-color: white;
+	}
+	#touch:hover{
+		color: white;
+		 background-color: #ff004f;
+	}
+	#hov{
+		color: white;
+	}
+	#hov:hover{
+		color: #ff004f;
+	}
+	.nav-link.active{
+		color: #fd0050 !important;
+	}
+	
+	
+</style>
+
+<body>
+	<header class="header text-center" style="background-color: black !important;">
+		<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html"
+				style="color: white;">Pushpendra's Blog</a></h1>
+
+		<nav class="navbar navbar-expand-lg navbar-dark">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column">
+				<div class="profile-section pt-3 pt-lg-0">
+					<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/B.png" alt="image">
+
+					<div class="bio mb-3">Hii, My name is Pushpendra Kumar. A passionate and results-driven individual
+						with a
+						background in Computer Science. Welcome to my page.<br>
+					</div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+						<li class="list-inline-item" title="Linkedin"><a href="https://www.linkedin.com/in/pushpendra-kumar-8bb2581a1"
+								target="_blank"><i class="fab fa-linkedin-in fa-fw" title="Linkedin" style="color: #ff004f;"></i></a>
+						</li>
+						<li class="list-inline-item"  title="Github"><a href="https://github.com/pushpendrakumar1" target="_blank"><i
+									class="fab fa-github-alt fa-fw"  title="Github" style="color: #ff004f;"></i></a></li>
+						<li class="list-inline-item"  title="Instagram"><a href="https://instagram.com/varunk6854?igshid=NTE5MzUyOTU="
+								target="_blank"><i class="fab fa-instagram fa-fw" title="Instagram" style="color: #ff004f;"></i></a></li>
+						<li class="list-inline-item" title="Facebook"><a href="https://www.facebook.com/Varun-Kumar-113202831703016/"
+								target="_blank"><i class="fab fa-facebook fa-fw" title="Facebook" style="color: #ff004f;"></i></a></li>
+						<li class="list-inline-item" title="Portfolio"><a href="https://pushpendraportfolio.netlify.app/"
+								target="_blank"><i class="fab fa-codepen fa-fw" title="Portfolio" style="color: #ff004f;"></i></a></li>
+					</ul><!--//social-list-->
+					<hr>
+				</div><!--//profile-section-->
+
+				<ul class="navbar-nav flex-column text-start">
+					<li class="nav-item">
+						<a class="nav-link " href="index.html" id="hov"><i class="fas fa-home fa-fw me-2"
+								style="color: #ff004f;"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="blog-post.html" id="hov"><i
+								class="fas fa-bookmark fa-fw me-2" style="color: #ff004f;"></i>Blog
+							Post</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="about.html" id="hov"><i
+								class="fas fa-user fa-fw me-2 " style="color: #ff004f;"></i>About Me</a>
+					</li>
+				</ul>
+
+				<div class="my-2 my-md-3">
+
+					<a class="btn btn-primary" id="touch" href="index.html"
+						>Get in Touch</a>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+	<div class="main-wrapper">
+        <section class="cta-section  py-5" style="background-color: aliceblue;">
+			<div class="container text-center single-col-max-width">
+				<h2 class="heading">Pushpendra's Blog</h2>
+            </div>
+		</section>	
+		<article class="blog-post px-3 py-5 p-md-5">
+			<div class="container single-col-max-width">
+				<!-- ----------------------------------------------Block-1-start--------------------------------------------------------- -->
+				<header class="blog-post-header">
+					<h2 class="title mb-2">Search Engine Optimization (SEO) </h2>
+					<div class="meta mb-3"><span class="date">Published 2 days ago</span><span class="time">5 min
+							read</span><span class="comment"><a class="text-link" href="#">4 comments</a></span></div>
+				</header>
+
+				<div class="blog-post-body">
+					<figure class="blog-banner">
+					</figure>
+					<p>Search Engine Optimization (SEO) is a multifaceted digital marketing discipline aimed at
+						enhancing a website's visibility and ranking on search engine results pages (SERPs). It
+						encompasses a range of strategies and techniques to optimize various aspects of a website,
+						making it more appealing to search engines like Google, Bing, and Yahoo. The primary goal of SEO
+						is to increase organic (non-paid) traffic to a website, thereby improving its online presence
+						and driving potential customers. </p>
+
+					<h3 class="mt-5 mb-3">Key Components of SEO:</h3>
+					<ul class="">
+						<li> Keyword Research: Identifying and targeting relevant keywords that potential users are
+							likely to search for. These keywords are strategically incorporated into website content,
+							meta tags, and headers.</li>
+
+						<li> On-Page Optimization: Refining the website's internal elements, including meta tags,
+							headings, image alt text, and content structure, to make it more search engine-friendly.
+						</li>
+
+						<li> Off-Page Optimization: Building a strong online presence through external factors such as
+							backlinks (links from other websites), social signals, and online mentions.</li>
+
+						<li> Technical SEO: Ensuring that the website is technically sound and free from issues that can
+							hinder search engine crawling and indexing, such as site speed, mobile-friendliness, and
+							schema markup.</li>
+
+						<li> Content Creation: Generating high-quality, relevant, and engaging content that addresses
+							user queries and provides value. This not only attracts visitors but also encourages sharing
+							and backlinking.</li>
+
+						<li> Local SEO: Optimizing for local search results, especially for businesses with physical
+							locations, to appear in local map packs and directories.</li>
+
+						<li> User Experience (UX): Improving website usability, navigation, and page load times to
+							enhance user satisfaction and reduce bounce rates.</li>
+
+						<li> Analytics and Monitoring: Utilizing tools like Google Analytics to track website
+							performance, monitor keyword rankings, and measure the effectiveness of SEO strategies.</li>
+					</ul>
+
+					<p class="beni" id="beni">Benefits of SEO:</p><br>
+
+					Increased Organic Traffic:<br>
+					<ul>
+						<li> Effective SEO can significantly boost the number of visitors to a
+							website, increasing brand visibility and potential conversions.</li>
+						<li> Cost-Effective: Compared to paid advertising, SEO is a cost-effective long-term strategy
+							for
+							driving traffic.</li>
+						<li> Credibility and Trust: High search engine rankings often translate to increased credibility
+							and
+							trust among users.</li>
+						<li> Better User Experience: SEO involves optimizing for user experience, which benefits both
+							search
+							engine rankings and website visitors.</li>
+						<li> Competitive Advantage: Outperforming competitors in search results can provide a
+							substantial
+							competitive advantage in the online marketplace.</li><br>
+						In today's digital landscape, SEO is a fundamental component of any successful online presence,
+						helping businesses and websites connect with their target audiences effectively.
+					</ul>
+
+					<h1 class="my-3">SEO Best Practices:</h1>
+					<blockquote class="blockquote m-lg-5 py-3 ps-4 px-lg-5">
+						<p class="mb-2">Search engine optimization (SEO) is not just about keywords; it's about creating
+							a seamless user experience and providing valuable content that answers your audience's
+							questions.</p>
+						<footer class="blockquote-footer mt-0">SEO Expert</footer>
+					</blockquote>
+
+					<h3 class="mt-5 mb-3">Video Example</h3>
+					<p>SEO, or Search Engine Optimization, is the practice of optimizing websites to rank higher in
+						search engine results pages (SERPs). It involves techniques like keyword optimization, content
+						improvement, and building quality backlinks to increase organic website traffic. Effective SEO
+						strategies enhance online visibility and user engagement.</p>
+
+					<div class="ratio ratio-16x9">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/83RXYrqRLeM?si=dV7I6wM6w2LvT0vx"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+					</div>
+
+				</div>
+
+
+				<nav class="blog-nav nav nav-justified my-5">
+					<a class="nav-link-prev nav-item nav-link rounded-left" href="#">Previous<i
+							class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+					<a class="nav-link-next nav-item nav-link rounded-right" href="">Next<i
+							class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+				<!-- ----------------------------------------------Block-1-End--------------------------------------------------------- -->
+				<!-- -----------------------------------------Second_Block______________________________________________________________ -->
+				<header class="blog-post-header">
+					<h2 class="title mb-2">Mastering Web Application Development with Python and Django: Your
+						Comprehensive Guide"</h2>
+					<div class="meta mb-3"><span class="date">Published 4 days ago</span><span class="time">5 min
+							read</span><span class="comment"><a class="text-link" href="#">7 comments</a></span></div>
+				</header>
+
+				<div class="blog-post-body">
+					<figure class="blog-banner">
+					</figure>
+					<p>Building a web application with Python and Django involves creating dynamic and interactive
+						web-based software. Here are the steps to build a web app using Python and Django: </p><br>
+					<p>Unlock the world of dynamic and interactive web applications with our in-depth guide on building
+						web solutions using Python and Django. Whether you're a novice programmer or an experienced
+						developer looking to expand your skill set, this comprehensive blog post will walk you through
+						the entire process, providing you with a solid foundation to create web applications that stand
+						out.</p>
+					<h3 class="mt-5 mb-3">Step-by-Step Guide with Commands:</h3>
+					<ul class="">
+						<p class="beni" id="beni">Step 1: Setting Up Your Development Environment</p><br>
+						<li>Ensure you have the right Python version installed, create a virtual environment for your
+							project to keep dependencies isolated, and activate the virtual environment to work within
+							it.</li>
+						<li> Command: python --version (Check Python version)</li>
+						<li> Command: python -m venv myenv (Create a virtual environment)</li>
+						<li> Command: source myenv/bin/activate (Activate the virtual environment)</li>
+
+
+						<p class="mt-4" id="beni">Step 2: Installing Django and Creating Your First Project</p><br>
+						<li>Install the Django framework and create your initial project, which will serve as the
+							foundation for your web application.</li>
+						<li> Command: pip install Django (Install Django)</li>
+						<li> Command: django-admin startproject myproject (Create a Django project)</li>
+
+
+						<p class="mt-4" id="beni">Step 4: Building Views and Templates</p><br>
+						<li>Define your data models, then create and apply database migrations to set up your database
+							structure.</li>
+						<li> Command: python manage.py makemigrations (Create database migrations)</li>
+						<li> Command: python manage.py migrate (Apply database migrations)</li>
+
+
+
+						<p class="mt-4" id="beni">Step 5: User Authentication and Security</p><br>
+						<li> Establish user authentication for your web app, and collect static files to serve your CSS,
+							JavaScript, and images.</li>
+						<li> Command: python manage.py createsuperuser (Create an admin user)</li>
+						<li> Command: python manage.py collectstatic (Collect static files)</li>
+
+
+						<p class="mt-4" id="beni">Step 6: Integrating Front-End Technologies</p><br>
+						<li>Enhance your web application's user interface by incorporating Bootstrap for Django, a
+							powerful front-end framework.</li>
+						<li> Command: pip install django-bootstrap4 (Install Bootstrap for Django)</li>
+
+
+						<p class="mt-4" id="beni">Step 7: URL Routing and Form Handling</p><br>
+						<li>Create a Django app to manage URL routing and form handling, central elements of your web
+							app's functionality.</li>
+						<li> Command: python manage.py startapp myapp (Create a Django app)</li>
+
+
+						<p class="mt-4" id="beni">Step 8: Testing and Debugging</p><br>
+						<li>Ensure the reliability of your web app by running tests and checking for any potential
+							issues in your codebase.</li>
+						<li> Command: python manage.py test (Run tests)</li>
+						<li> Command: python manage.py check (Check for issues)</li>
+
+
+
+						<p class="mt-4" id="beni">Step 9: Deployment Options</p><br>
+						<li>Prepare your application for deployment by installing Gunicorn, a popular web server for
+							running Django apps in production.</li>
+						<li> Command: pip install gunicorn (Install Gunicorn for deployment)</li>
+
+
+						<p class="mt-4" id="beni">Step 10: Hosting and Scaling</p><br>
+						<li> Learn about hosting options and scaling strategies, including using PostgreSQL for your
+							database and Whitenoise for serving static files.</li>
+						<li> Command: pip install psycopg2-binary (Install PostgreSQL adapter)</li>
+						<li> Command: pip install whitenoise (Install Whitenoise for static files)</li><br>
+
+						<p>As you progress through this guide, you'll gain a deep understanding of the Django
+							framework's capabilities and learn how to structure your web application for scalability and
+							maintainability. Plus, we'll cover testing, deployment, and hosting options to help you
+							bring your project to life on the internet.
+
+							Whether you're building a personal blog, an e-commerce site, or a robust web application,
+							this guide will equip you with the knowledge and skills to create web solutions that meet
+							your specific needs. Join us on this journey of web application development excellence and
+							start turning your ideas into fully functional web experiences today.</p><br>
+
+
+					</ul>
+
+					<p class="beni" id="beni">Benefits of Django:</p><br>
+
+					<ul>
+						<li> Rapid Development: Django's built-in tools and abstractions streamline web development,
+							allowing for fast and efficient application building.</li>
+						<li>High-Level Abstractions: Django abstracts complexities, reducing common coding errors.</li>
+						<li> Scalability: Django handles high-traffic websites and offers scalability options.</li>
+						<li> Security: Strong focus on security with built-in protections against common web
+							vulnerabilities.</li>
+						<li> Versatile Database Support: Supports multiple databases to suit project requirements.</li>
+						<li> Admin Interface: Automatic admin panel for easy data management.</li>
+						<li> Reusability: Encourages creating reusable apps and components.</li>
+						<li> Community and Ecosystem: Active community, extensive documentation, and third-party
+							packages.</li>
+						<li> ORM: Simplifies database interactions using Python objects.</li>
+						<li> Testing Framework: Built-in testing framework for code quality and reliability.</li>
+						<li> SEO-Friendly URLs: Clean and search engine-friendly URL routing.</li>
+						<li> REST Framework: Powerful toolkit for building web APIs.</li><br>
+					</ul>
+
+					<h1 class="my-3">Django Advantages:</h1>
+					<blockquote class="blockquote m-lg-5 py-3 ps-4 px-lg-5">
+						<p class="mb-2">Django is not just a web framework; it's a powerful tool for simplifying web
+							development,
+							enabling developers to focus on creating exceptional applications while handling the
+							complexities
+							behind the scenes.</p>
+						<footer class="blockquote-footer mt-0">Django Enthusiast</footer>
+					</blockquote>
+
+					<h3 class="mt-5 mb-3">Video Example</h3>
+					<p>Django is a popular and powerful web framework for Python that offers numerous benefits for web developers and businesses.</p>
+					<div class="ratio ratio-16x9 mb-2">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/MLeVezRSjvU?si=76mjGUtL8VgirbnN"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+					</div>
+					<div class="ratio ratio-16x9">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/JxzZxdht-XY?si=hqjF0fgSAm8Df2Gu"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+					</div>
+
+				</div>
+
+
+				<nav class="blog-nav nav nav-justified my-5">
+					<a class="nav-link-prev nav-item nav-link rounded-left" href="#">Previous<i
+							class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+					<a class="nav-link-next nav-item nav-link rounded-right" href="">Next<i
+							class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				<!-- -----------------------------------------Second_Block_End______________________________________________________________ -->
+				<!-------------------------------------------------------- Third Block------------------------------------------------------ -->
+				<header class="blog-post-header">
+					<h2 class="title mb-2">Creating a CRUD App with React.js</h2>
+					<div class="meta mb-3">
+						<span class="date">Published 2 days ago</span>
+						<span class="time">10 min read</span>
+						<span class="comment"><a class="text-link" href="#">7 comments</a></span>
+					</div>
+				</header>
+			
+				<div class="blog-post-body">
+					<figure class="blog-banner">
+						<!-- You can add a banner image here if you like -->
+					</figure>
+					<p>Creating a CRUD (Create, Read, Update, Delete) app with React.js is a fundamental skill for web developers. In this tutorial, we will walk you through the process of building a simple CRUD app using React.js, a popular JavaScript library for building user interfaces.</p>
+			
+					<h3 class="mt-5 mb-3">Key Components of Building a CRUD App with React.js:</h3>
+					<ul>
+						<li>Setting up the React.js development environment</li>
+						<li>Creating components for each CRUD operation (Create, Read, Update, Delete)</li>
+						<li>Managing state and data with React hooks or state management libraries</li>
+						<li>Implementing routing for navigating between different parts of the app</li>
+						<li>Connecting the app to a backend API for data storage</li>
+						<li>Styling the app for a polished user interface</li>
+					</ul>
+			
+					<h3 class="mt-5 mb-3">Video Tutorial:</h3>
+					<p>Watch the video tutorial below to learn how to create a CRUD app with React.js:</p>
+			
+					<div class="ratio ratio-16x9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/H9M02of22z4?si=1maEgGgxOXBHj4uy&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>					</div>
+			
+				</div>
+			
+				<nav class="blog-nav nav nav-justified my-5">
+					<a class="nav-link-prev nav-item nav-link rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+					<a class="nav-link-next nav-item nav-link rounded-right" href="#">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+			
+				<!-- ------------------------------------------------------------------Third Block End--------------------------------------- -->
+				<div class="blog-comments-section">
+					<div id="disqus_thread"></div>
+					<script>
+						/**
+						 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+						 *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+						 *  PLATFORM OR CMS.
+						 *  
+						 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+						 *  https://disqus.com/admin/universalcode/#configuration-variables
+						 */
+						/*
+						var disqus_config = function () {
+							// Replace PAGE_URL with your page's canonical URL variable
+							this.page.url = PAGE_URL;  
+						    
+							// Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							this.page.identifier = PAGE_IDENTIFIER; 
+						};
+						*/
+
+						(function () {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+							var d = document, s = d.createElement('script');
+
+							// IMPORTANT TODO: Replace 3wmthemes with your forum shortname!
+							s.src = 'https://3wmthemes.disqus.com/embed.js';
+
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+						})();
+					</script>
+					<noscript>
+						Please enable JavaScript to view the
+						<a href="https://disqus.com/?ref_noscript" rel="nofollow">
+							comments powered by Disqus.
+						</a>
+					</noscript>
+				</div><!--//blog-comments-section-->
+
+			</div><!--//container-->
+		</article>
+
+		<section class="promo-section  py-5 text-center" style="background-color: aliceblue;">
+			<div class="container">
+				<h2 class="title">Visit My Portfolio Website</h2>
+				<a href="https://pushpendraportfolio.netlify.app/" style="text-decoration: none;">Go to Portfolio</a>
+				<figure class="promo-figure">
+				</figure>
+			</div>
+		</section>
+		<div class="whatsapp">
+			<a href="https://wa.me/917078932543" target="_blank"><img src="assets/images/what.jpg" width="50px"
+					class="whatsapp_btn"></a>
+		</div>
+		<div class="scroll">
+			<a href="#" id="up" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+		</div>
+		<footer class="footer text-center py-2 theme-bg-dark">
+
+			<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"
+					style="color: #fb866a;"></i> by <a href="https://pushpendraportfolio.netlify.app/"
+					target="_blank" style="text-decoration: none;">Pushpendra Kumar</a></small>
+
+		</footer>
+
+	</div><!--//main-wrapper-->
+
+
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Page Specific JS -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/blog.js"></script>
+
+
+</body>
+
+</html>
